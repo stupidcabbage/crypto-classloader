@@ -1,0 +1,27 @@
+родитель класс по имени НЕ находит (его нет на classpath)
+[SecretGreeting] static init, определил: ru.centraluniversity.CryptoClassLoader@4dc63996
+greeting = Привет от зашифрованного класса
+определял загрузчик c1: ru.centraluniversity.CryptoClassLoader@4dc63996
+[SecretGreeting] static init, определил: ru.centraluniversity.CryptoClassLoader@372f7a8d
+c1 == c2? false
+c1.isInstance(экземпляр c2)? false
+загрузчики: ru.centraluniversity.CryptoClassLoader@4dc63996 vs ru.centraluniversity.CryptoClassLoader@372f7a8d
+greeting из c2 = Привет от зашифрованного класса
+CountingGreeting загружен, до создания объектов static init не было
+[CountingGreeting] static init, определил: ru.centraluniversity.CryptoClassLoader@77459877
+[CountingGreeting] static init, определил: ru.centraluniversity.CryptoClassLoader@5b2133b1
+первый загрузчик: Привет из своего пейлоада, вызов №1; Привет из своего пейлоада, вызов №2
+второй загрузчик, два объекта: Привет из своего пейлоада, вызов №1; Привет из своего пейлоада, вызов №2
+GreetingText определил тот же загрузчик: ru.centraluniversity.CryptoClassLoader@5b2133b1
+[SecretGreeting] static init, определил: ru.centraluniversity.ChildFirstCryptoClassLoader@4eec7777
+parent-first вернул класс родителя: true
+child-first определил отдельный класс: true, Привет от зашифрованного класса
+child-first без локального файла вернулся к родителю: true
+[SecretGreeting] static init, определил: ru.centraluniversity.ChildFirstCryptoClassLoader@682a0b20
+собственная копия GreetingProvider: ClassCastException
+запрос отсутствующего класса: ClassNotFoundException
+каталог вместо class-файла: ClassNotFoundException
+неверный ключ: ClassFormatError
+[CountingGreeting] static init, определил: ru.centraluniversity.CryptoClassLoader@7699a589
+вызов метода без GreetingText: NoClassDefFoundError, причина ClassNotFoundException
+Все дополнительные проверки пройдены
